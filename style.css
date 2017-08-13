@@ -1,0 +1,158 @@
+body {
+    background-color: #484848;
+
+}
+
+#top-header {
+    position: fixed;
+    background-color: #212121;
+    color: white;
+    width:100vw;
+    left:0;
+    float:top;
+    top:0;
+    height:56px;
+}
+
+
+.right-menu {
+    float:right;
+}
+.right-menu-item{
+    display: inline-block;
+    /* font-size:46px; */
+    padding:8px 6px;
+}
+
+#top-header p{
+    display: inline-block;
+    padding-left:10px;
+}
+
+#top-header a {
+    display: inline-block;
+}
+
+#top-header .right-menu{
+    display: inline-block;
+}
+
+#close-btn {
+    color:white;
+}
+
+#max-btn {
+    color:white;
+}
+
+#min-btn{
+    color:white;
+}
+
+#close-btn:hover {
+    color:red;
+}
+
+#max-btn:hover {
+    color:yellow;
+}
+
+#min-btn:hover{
+    color:greenyellow;
+}
+
+#content {
+    margin-top:6px;
+}
+
+.saira {
+    font-family: 'Saira', sans-serif;
+}
+
+.btn {
+    /* border-radius: 5px; */
+    padding: 10px 28px;
+    background-color: greenyellow;
+    font-size: 16px;
+    color:black;
+    border:none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn:active {
+    background-color: green;
+}
+
+.btn :targer {
+    background-color: #1e88e5;
+}
+
+.btn :focus {
+    background-color: green;
+}
+
+.side-nav {
+    height: 100%; /* 100% Full-height */
+    width: 100px; /* valor del ancho */
+    position: fixed; 
+    top: 50px;
+    left: 0;
+    float:left;
+    background-color: #212121; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+}
+
+
+
+.side-nav a{
+    padding: 8px 8px 8px 18px;
+    text-decoration: none;
+    font-size: 50px;
+    /* color: #c2c2c2; */
+    color: greenyellow;
+    display: block;
+}
+
+.side-nav a:hover, .offcanvas a:focus {
+    color: red;
+}
+
+#main_content {
+    margin-left: 100px;
+    margin-top:56px;
+    padding-top:6px;
+}
+
+#drag-title {
+    -webkit-app-region: drag;
+    position: absolute;
+    height:8px;
+    top:0;
+    width:100%;
+    left:0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    min-width: 400px;
+    width: 40%;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card .card-image {
+    width:100%;
+}
+
+.card .card-content {
+    margin:8px 6px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+}

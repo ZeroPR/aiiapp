@@ -1,0 +1,18 @@
+{
+  "name": "aii-desktop-app",
+  "version": "0.0.1",
+  "description": "Aplicacion para la AII de la Universidad Interamericana.",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron main.js"
+  },
+  "author": "Ricardo José Pérez Torres",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.6.11"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
