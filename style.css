@@ -85,7 +85,7 @@ body {
 }
 
 .btn:active {
-    background-color: green;
+    background-color: red;
 }
 
 .btn :targer {
