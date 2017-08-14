@@ -4,7 +4,7 @@ const ipcRenderer = require('electron').ipcRenderer;
 const fs = require('fs');
 
 let apiNewsURL = "http://aii-wp-rfig081.c9users.io/api/news_list.json";
-let apiEventURL = "";
+let apiEventURL = "https://aii-wp-rfig081.c9users.io/api/events_list.json";
 let apiAcademico = "";
 
 let data = "";
