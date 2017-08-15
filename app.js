@@ -2,9 +2,12 @@ const $ = require('jquery');
 const http = require('http');
 const ipcRenderer = require('electron').ipcRenderer;
 const fs = require('fs');
+const appInfo = require('./package.json');
 
-let apiNewsURL = "http://aii-wp-rfig081.c9users.io/api/news_list.json";
-let apiEventURL = "http://aii-wp-rfig081.c9users.io/api/events_list.json";
+console.log(appInfo.version);
+
+let apiNewsURL = "http://aii-wp-rfig081.c9users.io/api/news_list.json?appVersion="+appInfo.version;
+let apiEventURL = "http://aii-wp-rfig081.c9users.io/api/events_list.json?appVersion="+appInfo.version;
 let apiAcademico = "";
 
 let data = "";

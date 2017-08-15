@@ -10,6 +10,7 @@ app.on('ready', ()=>{
     mainWindow.loadURL('file://'+__dirname+'/index.html');
     mainWindow.once('ready-to-show', () => {
         mainWindow.show();
+        mainWindow.webContents.openDevTools({mode:"undocked"});
     });
 
     ipcMain.on('close-btn-click',()=>{
