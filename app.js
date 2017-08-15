@@ -4,7 +4,7 @@ const ipcRenderer = require('electron').ipcRenderer;
 const fs = require('fs');
 
 let apiNewsURL = "http://aii-wp-rfig081.c9users.io/api/news_list.json";
-let apiEventURL = "https://aii-wp-rfig081.c9users.io/api/events_list.json";
+let apiEventURL = "http://aii-wp-rfig081.c9users.io/api/events_list.json";
 let apiAcademico = "";
 
 let data = "";
@@ -28,6 +28,15 @@ function displayNews(data)
     content.empty();
     data.forEach(function(noticia) {
         content.append('<div class="card"><img class="card-image" src="'+ noticia.image_url +'" /><div class="card-content"><a href="'+noticia.news_url+'" target="_blank"><h5>'+noticia.title+'</h5></a></div></div>');
+    });
+}
+
+function displayEvents(data)
+{
+    let content = $('#content');
+    content.empty();
+    data.forEach((evento)=>{
+        content.append('<div class="card"><img class="card-image" src="'+ evento.image_url +'" /><div class="card-content"><a href="'+evento.event_url+'" target="_blank"><h5>'+evento.title+'</h5></a></div></div>');
     });
 }
 
@@ -58,7 +67,7 @@ $('#news').click((e)=>{
         console.log(data);
         data = JSON.parse(data);
         displayNews(data);
-        fs.writeFile('data/lastNews.json');
+        //fs.writeFile('data/lastNews.json',);
     });
     
     });

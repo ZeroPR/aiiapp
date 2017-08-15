@@ -71,6 +71,7 @@ body {
     font-family: 'Saira', sans-serif;
 }
 
+/* Button */
 .btn {
     border-radius: 5px; 
     padding: 10px 28px;
@@ -95,7 +96,9 @@ body {
 .btn :focus {
     background-color: green;
 }
+/* /Button */
 
+/* Sidebar */
 .side-nav {
     height: 100%; /* 100% Full-height */
     width: 100px; /* valor del ancho */
@@ -120,6 +123,7 @@ body {
 .side-nav a:hover, .offcanvas a:focus {
     color: red;
 }
+/* /Sidebar */
 
 #main_content {
     margin-left: 100px;
@@ -137,6 +141,7 @@ body {
     left:0;
 }
 
+/* Card */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     min-width: 400px;
@@ -157,3 +162,19 @@ body {
     padding-bottom: 8px;
     padding-left: 12px;
 }
+/* /Card */
+
+/* Scrollbar */
+#content::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+#content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+#content::-webkit-scrollbar-thumb {
+  background-color: greenyellow;
+  outline: 1px solid slategrey;
+}
+/* /Scrollbar */
