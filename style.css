@@ -3,6 +3,7 @@ body {
 
 }
 
+/* Titlebar */
 #top-header {
     position: fixed;
     background-color: #212121;
@@ -12,16 +13,6 @@ body {
     float:top;
     top:0;
     height:56px;
-}
-
-
-.right-menu {
-    float:right;
-}
-.right-menu-item{
-    display: inline-block;
-    /* font-size:46px; */
-    padding:8px 6px;
 }
 
 #top-header p{
@@ -35,6 +26,15 @@ body {
 
 #top-header .right-menu{
     display: inline-block;
+}
+
+.right-menu {
+    float:right;
+}
+.right-menu-item{
+    display: inline-block;
+    /* font-size:46px; */
+    padding:8px 6px;
 }
 
 #close-btn {
@@ -60,16 +60,7 @@ body {
 #min-btn:hover{
     color:greenyellow;
 }
-
-#content {
-    margin-top:6px;
-    max-height: 500px;
-    overflow-y: scroll;
-}
-
-.saira {
-    font-family: 'Saira', sans-serif;
-}
+/* /Titlebar */
 
 /* Button */
 .btn {
@@ -125,22 +116,6 @@ body {
 }
 /* /Sidebar */
 
-#main_content {
-    margin-left: 100px;
-    margin-top:56px;
-    padding-top:6px;
-    overflow: none;
-}
-
-#drag-title {
-    -webkit-app-region: drag;
-    position: absolute;
-    height:8px;
-    top:0;
-    width:100%;
-    left:0;
-}
-
 /* Card */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -178,3 +153,31 @@ body {
   outline: 1px solid slategrey;
 }
 /* /Scrollbar */
+
+/* Font */
+.saira {
+    font-family: 'Saira', sans-serif;
+}
+/* /Font */
+
+#content {
+    margin-top:6px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+#main_content {
+    margin-left: 100px;
+    margin-top:56px;
+    padding-top:6px;
+    overflow: none;
+}
+
+#drag-title {
+    -webkit-app-region: drag;
+    position: absolute;
+    height:8px;
+    top:0;
+    width:100%;
+    left:0;
+}

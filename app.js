@@ -45,7 +45,7 @@ function displayEvents(data)
 
 $('#news').click((e)=>{
     e.preventDefault();
-    
+    data = "";
 
     http.get(apiNewsURL, (res) => {
     
@@ -78,6 +78,8 @@ $('#news').click((e)=>{
 
 $('#events').click((e)=>{
     e.preventDefault();
+    data = "";
+
     console.log("Events Click");
 
     http.get(apiEventURL, (res) => {
