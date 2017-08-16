@@ -1,5 +1,6 @@
 body {
     background-color: #484848;
+    overflow: hidden;
 }
 
 /* Titlebar */
@@ -161,7 +162,7 @@ body {
 
 #content {
     margin-top:6px;
-    max-height: 500px;
+    max-height: 84vh;
     overflow-y: scroll;
 }
 
@@ -169,7 +170,7 @@ body {
     margin-left: 100px;
     margin-top:56px;
     padding-top:6px;
-    overflow: none;
+    overflow: hidden;
 }
 
 #drag-title {
