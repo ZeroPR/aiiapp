@@ -4,6 +4,8 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+        <!-- W3Schools script to create html snippets -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <body>
         <div id="drag-title"></div>
@@ -23,10 +25,13 @@
         </div>
         <div id="main_content">
             <button id="" class="btn">Reload</button>
-            <div class="" id="content"></div>
+            <div class="" id="content">
+                <div w3-include-html="academico.html" class="body-academico"></div>
+            </div>
         </div>
         <script>
             require('./app.js');
+            w3.includeHTML(); //Snippet
         </script>
     </body>
 </html>
